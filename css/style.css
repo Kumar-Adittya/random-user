@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Righteous&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}  
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    background: #dedede; 
+    position: relative;  
+    padding-top: 200px;
+    min-height: 100vh;
+}
+body:after{
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    margin-left: -200px;
+    width: 400px; height: 100%;
+    display: block; background-color: #8333e9;
+    z-index: 1;
+} 
+.heading{
+    font-size: 50px;
+    writing-mode: vertical-rl;
+    position: fixed;
+    top: 20px; left: 100px;
+}
+.user_card{
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 220px;
+    border-bottom: 2px solid #ff0053;
+    z-index: 9;
+}
+.user_img{
+    width: 300px;
+    max-width: 100%;
+    position: absolute;
+    left: -150px;
+    top: -150px;
+    border-radius: 4px;
+}
+.user_img:after{
+    content: '';
+    position: absolute;
+    left: 0; top: 0; z-index: 2;
+    height: 100%; width: 100%;
+    background-color: rgba(255, 4, 83, 0.4);
+}
+.user_img img{
+    width: 100%; 
+    border-radius: 4px; 
+    display: block;
+}
+.user_name{
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    left: 80px;
+    top: -130px;
+    z-index: 3;
+    color: #ffffff;
+    line-height: 1;
+}
+.user_name .last_name{
+    display: block;
+    margin-left: 30px;
+}
+.user_title{
+    color: #ff0053;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.user_description{
+    padding-left: 150px; 
+}
+.user_description p{
+    margin-bottom: 20px;
+}
+.link{
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: .3s all ease-in-out;
+}
+.link .fa{
+    color: #ff0053;
+    display: inline-block;
+    margin-right: 10px;
+}
+.link:hover{
+    color: #ff0053;
+}
+.user_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+} 
+.user_social_status{
+    flex-basis: 100%;
+}
+.user_footer .social_list{
+    display: flex;
+    justify-content: space-around;
+}
+.user_footer .social_list span{
+    color: #ff0053;
+}
